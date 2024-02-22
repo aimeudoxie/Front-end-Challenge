@@ -1,0 +1,119 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    
+}
+body{
+     background: #f3faf9;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    margin-left: 25%;
+    width: 45%;
+    height: 250px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 5px 40px 80px 0px #cfffd2;
+
+}
+.right-side{
+    height: 100%;
+    width: 40%;
+}
+.right-side img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+.left-side{
+    width: 60%;
+    padding: 7% 7%;
+}
+h2{
+    font-size: clamp(13px , 1.2vw, 40px);
+    color: #51585d;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:550;
+}
+p{
+    font-size: clamp(13px , 0.8vw, 40px);
+    color: #5a666d;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px 0px ;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2;
+    padding: 2px;
+}
+
+.left-side .imgbox {
+    flex :1;
+}
+
+.left-side .imgbox img{
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+}
+.left-side .text{
+    flex: 7;
+}
+.left-side .icon{
+    flex: 1;
+text-align: center;
+padding: 2% 0%;
+}
+.left-side .icon:hover{
+    background: #8f9191;
+    cursor: pointer;
+    border-radius:50%;
+    
+}
+
+.left-side .text h5{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: clamp(10px , 0.8vw, 20px);
+    color:#3B4A54;
+    font-weight: 500;
+
+}
+.left-side .text p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: clamp(10px , 0.9vw, 20px);
+    color:#a9adaf;
+    font-weight: 400;
+    padding: 1px;
+}
+
+
+@media only screen  and (max-width: 426px){
+    .container{
+        flex-direction: column;
+        width: 270px;
+        margin-left: 18%;
+        height: 480px;
+    }
+    .left-side{
+        width: 90%;
+        padding: 7% 7%;
+    }
+    .right-side{
+       width: 100%;
+       height: 40%;
+    }
+    .right-side img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .bottom{
+        padding: 10px;
+    }
+
+}
